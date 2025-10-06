@@ -146,11 +146,3 @@ Best when your `.pbix` reads **SQL Server/Postgres** (on-prem or VM).
 - No `#Error` values in Power Query.
 
 ---
-
-## 🙌 Credits & License
-- Starter created for data engineering/analytics portfolios.  
-- License: **MIT** (see `LICENSE`).
-
----
-
-**Questions or improvements?** Open an issue or PR. Happy building! 🎉
