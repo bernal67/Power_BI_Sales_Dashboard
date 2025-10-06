@@ -1,0 +1,15 @@
+let
+    Source = Csv.Document(File.Contents("data/sales.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Promote = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    ChangeTypes = Table.TransformColumnTypes(Promote,{
+        {"OrderID", Int64.Type},
+        {"OrderDate", type date},
+        {"StoreID", Int64.Type},
+        {"EmployeeID", Int64.Type},
+        {"ProductID", Int64.Type},
+        {"Quantity", Int64.Type},
+        {"UnitPrice", type number},
+        {"Discount", type number}
+    })
+in
+    ChangeTypes

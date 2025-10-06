@@ -1,0 +1,7 @@
+{
+  "name": "Clean Blue/Gray",
+  "dataColors": ["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395"],
+  "background": "#FFFFFF",
+  "foreground": "#2E2E2E",
+  "tableAccent": "#3366CC"
+}
